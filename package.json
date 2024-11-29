@@ -1,0 +1,19 @@
+{
+  "name": "cypress_e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "browser:chrome": "npx cypress run --browser=chrome --spec cypress/e2e/example_spec.cy.js",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "allure-commandline": "^2.32.0",
+    "allure-cypress": "^3.0.6",
+    "cypress": "^13.16.0",
+    "cypress-plugin-steps": "^1.1.1"
+  }
+}
